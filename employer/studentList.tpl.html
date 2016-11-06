@@ -1,0 +1,28 @@
+<div>
+    <table width="100%" class="table">
+        <thead>
+        <tr>
+            <th width="600px"> Name </th>
+            <th width="300px"> Email</th>
+            <th width="70px"> Contact Number</th>
+            <th width="70px"> Major </th>
+            <th> Degree </th>
+            <th> Year</th>
+            <th> Expected Graduation</th>
+            <th>Comments</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tr ng-repeat= "eachStudent in studentList">
+        <td>{{eachStudent.name}}</td>
+        <td>{{eachStudent.email}}</td>
+        <td>{{eachStudent.contact}}</td>
+        <td>{{eachStudent.major}}</td>
+        <td>{{eachStudent.degree}}</td>
+        <td>{{eachStudent.year}}</td>
+        <td>{{eachStudent.expectedGraduation}}</td>
+        <td>{{eachStudent.comments}}</td>
+        <td>{{eachStudent.rating}}</td>
+        </tr>
+    </table>
+</div>

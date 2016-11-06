@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>My AngularJS App</title>
+	<link rel="stylesheet" href="app.css">
+	<style>
+		.table thead{
+			background: #3498db;
+			background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+			background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+			background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+			background-image: -o-linear-gradient(top, #3498db, #2980b9);
+			background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			-webkit-border-radius: 28;
+			-moz-border-radius: 28;
+			border-radius: 28px;
+			font-family: Arial;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 10px 20px 10px 20px;
+			text-decoration: none;
+		}
+		</style>
+</head>
+<body ng-cloak>
+	<ul class="menu">
+		<li><a href="#/view1">QR Scan</a></li>
+		<!--<li><a href="#/view2">view2</a></li>-->
+		<li><a href="#/studentList">Registered Students</a></li>
+	</ul>
+
+	<div ng-view></div>
+
+
+	<script data-main="require-config" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<p>This is the partial for view 2.</p>
+<p>
+	{{ welcomeMessage }}
+</p>
+<p>
+	Showing of 'interpolate' filter:
+	{{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+
+<form>
+	<br> <input id = "finame" type="text" name="firstname" placeholder="First Name">
+	<br>
+	<br><input  id = "laname" type="text" name="lastname" placeholder="Last Name">
+	<br>
+	<br><input  id = "eemail" type="text" name="email"  placeholder="Email">
+	<br>
+	<br><input  id = "num" type="number" nam="number" placeholder="Phone">
+	<br>
+	<textarea rows="4" cols="50" placeholder="Comments" id="cmts"></textarea>
+	<br>
+	<button ng-click="writeUserData()" id="btnLogin" > Submit</button>
+
+</form>
